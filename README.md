@@ -1,7 +1,7 @@
 # flask-app_doc-k8s
 
-Install python3
+## Step 1 - Install python3
 sudo apt install python3
 
-Install flask
+## Step 2 - Install flask
 pip install flask
