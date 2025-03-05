@@ -11,10 +11,13 @@ pip install flask
 python3 flask-app.py
 
 ## Test the result:
+```bash
 curl http://127.0.0.1:5001
+```
 or
+```bash
 curl localhost:5001
-
+```
 # Run Flask Application on Docker
 
 [Install docker on your system](https://docs.docker.com/engine/install/)
