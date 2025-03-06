@@ -35,8 +35,8 @@ sudo service docker start
 ```
 ## Build the docker image
 ```bash
-sudo docker build -t shreya221998/flask-app:latest 
-```.
+sudo docker build -t shreya221998/flask-app:latest . 
+```
 
 ## Run the docker image
 ```bash
