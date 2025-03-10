@@ -42,7 +42,40 @@ sudo docker build -t shreya221998/flask-app:latest .
 ```bash
 sudo docker run -d shreya221998/flask-app:latest
 ```
-## Enter inside flask-qpp container
+## Enter inside flask-app container
 ```bash
 sudo docker exec -itd 1115b285d2a1 bin/bash
 ```
+
+# Run Flask Application on Kubernetes
+
+## Hope your cluster is all set
+##  Check namespace and switch to default namespace
+
+```bash
+kubectl namespace
+```
+
+```bash
+kubectx default
+```
+## Create deployment using docmentation and apply 
+```bash
+kubectl apply -f flask-app-deployment.yaml
+```
+## Create teh service for Cluster internal communication and apply using below url
+```bash
+kubectl apply -f flask-app-service.yaml
+```
+```bash
+kubectl get pods -o wide
+```
+## For accessing outside setup ingress using documentation
+```bash
+k apply -f ingress.yaml
+```
+
+# Hence Simple Falsk Application is setup on Linux Server, Docker and Kubernetes.
+
+
+
